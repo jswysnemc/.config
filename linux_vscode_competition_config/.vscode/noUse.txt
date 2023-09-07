@@ -1,0 +1,42 @@
+{
+
+     "code-runner.executorMap": {
+        // STD_Stream
+        "c":"mkdir -p $workspaceRoot/bin && gcc $fileName -o $workspaceRoot/bin/$fileNameWithoutExt && konsole -e \"Pauser '$workspaceRoot/bin/$fileNameWithoutExt'  \"  ",
+        "cpp":"mkdir -p $workspaceRoot/bin && g++ $fileName -o $workspaceRoot/bin/$fileNameWithoutExt && konsole -e \"Pauser '$workspaceRoot/bin/$fileNameWithoutExt' \"  ",
+        "java": "mkdir -p $workspaceRoot/bin &&  javac  -d $workspaceRoot/bin -encoding UTF-8 $fileName && konsole -e \"Pauser 'java -classpath $workspaceRoot/bin $fileNameWithoutExt'  \"  ",
+        "python" : "konsole -e \"Pauser 'python -u $fullFileName'   \"",
+        "javascript":"konsole -e  \"Pauser 'node $fullFileName' \""
+     },
+
+
+    "code-runner.runInTerminal": true
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
