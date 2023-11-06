@@ -2,9 +2,9 @@
 
     "code-runner.executorMap": {
         // FileStream
-        "c":"mkdir -p $workspaceRoot/bin && gcc $fileName -o $workspaceRoot/bin/$fileNameWithoutExt && konsole -e \"Pauser '$workspaceRoot/bin/$fileNameWithoutExt' 'input.txt' 'out.txt' \"  ",
-        "cpp":"mkdir -p $workspaceRoot/bin && g++ $fileName -o $workspaceRoot/bin/$fileNameWithoutExt && konsole -e \"Pauser '$workspaceRoot/bin/$fileNameWithoutExt' 'input.txt' 'out.txt' \"  ",
-        "java": "mkdir -p $workspaceRoot/bin &&  javac  -d $workspaceRoot/bin -encoding UTF-8 $fileName && konsole -e \"Pauser 'java -classpath $workspaceRoot/bin $fileNameWithoutExt' 'input.txt' 'out.txt' \"  ",
+        "c":"mkdir -p $workspaceRoot/bin && gcc $fullFileName -o $workspaceRoot/bin/$fileNameWithoutExt && konsole -e \"Pauser '$workspaceRoot/bin/$fileNameWithoutExt' 'input.txt' 'out.txt' \"  ",
+        "cpp":"mkdir -p $workspaceRoot/bin && g++ $fullFileName -o $workspaceRoot/bin/$fileNameWithoutExt && konsole -e \"Pauser '$workspaceRoot/bin/$fileNameWithoutExt' 'input.txt' 'out.txt' \"  ",
+        "java": "mkdir -p $workspaceRoot/bin &&  javac  -d $workspaceRoot/bin -encoding UTF-8 $fullFileName && konsole -e \"Pauser 'java -classpath $workspaceRoot/bin $fileNameWithoutExt' 'input.txt' 'out.txt' \"  ",
         "python" : "konsole -e \"Pauser 'python -u $fullFileName'  'input.txt' 'out.txt' \"",
         "javascript":"konsole -e  \"Pauser 'node $fullFileName' 'input.txt' 'out.txt' \""
      },
